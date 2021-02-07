@@ -1,34 +1,31 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room"
-  ],
+    "pages/Lonly/index"
+  ],  
+  "usingComponents": {
+    "van-calendar": "@vant/weapp/calendar/index"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "提高计算精度"
+    }
+  },
   "tabBar": {
     "color": "#FFFFFF",
     "backgroundColor": "#F06293",
     "borderStyle": "black",
     "list": [
       {
-        "selectedIconPath": "images/user-unlogin.png",
-        "iconPath": "images/user-unlogin.png",
+        "selectedIconPath": "images/iceCreamSel.png",
+        "iconPath": "images/iceCream.png",
         "pagePath": "pages/index/index",
         "text": "记录"
       }, 
       {
-        "selectedIconPath": "images/user-unlogin.png",
-        "iconPath": "images/user-unlogin.png",
-        "pagePath": "pages/index/index",
+        "selectedIconPath": "images/noteSel.png",
+        "iconPath": "images/note.png",
+        "pagePath": "pages/Lonly/index",
         "text": "L.only"
       }
     ]

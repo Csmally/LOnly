@@ -15,8 +15,7 @@ App({
     }
 
     wx.cloud.callFunction({name:'login',data:{}}).then(res=>{
-      // if(res.result.openid=='o7MH55Z1mCAftFRsQWEkA1lGukuM'||res.result.openid=='o7MH55cmTNBJFas252BXav_OvoLE'){
-      if(res.result.openid=='o7MH55Z1mCAftFRsQWEkA1lGukuM'){
+      if(res.result.openid=='o7MH55Z1mCAftFRsQWEkA1lGukuM'||res.result.openid=='o7MH55cmTNBJFas252BXav_OvoLE'){
         this.globalData.openid = res.result.openid
         this.globalData.notLLL = false
         if (this.notLLLCallback){
@@ -33,6 +32,7 @@ App({
   },
   globalData:{
     openid:'',
-    notLLL:''
+    notLLL:'',
+    isFromLonly:false
   }
 })

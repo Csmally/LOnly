@@ -24,9 +24,7 @@ Page({
     app.globalData.isFromLonly = true
   },
   onReady: function() {
-    this.setData({
-      showFuncDo:true
-    })
+    
   },
 
   //获取用户信息
