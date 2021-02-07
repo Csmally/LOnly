@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+<!-- 只有LLL可以看见 -->
+<view>asa</view>
+<view>asa</view>
+<button bindtap="dianji">点击</button>
+<!-- 非LLL提示警告 -->
+<view class="cu-modal show" wx:if="{{notLLL}}">
+  <view class="cu-dialog">
+    <view class="bg-img" style="background-image: url('http://m.qpic.cn/psc?/V51Cfi4w1JZW4E3xeVBP3jwtwi2UpOjI/45NBuzDIW489QBoVep5mcXdOSESDh6gaocnd7F.5nmubesvYRDb4eAquAg7hdfHrgcXa4PvDUr7ek3T9akEbhA7iXIzHJqgaa66hPfqw.rI!/b&bo=OASTBQAAAAABF5o!&rf=viewer_4');height:200px;">
+      <view class="cu-bar justify-end text-white">
+        <view class="action" bindtap="hideModal">
+          <text class="cuIcon-close "></text>
+        </view>
+      </view>
+    </view>
+    <!-- orange.light red.light yellow olive green purple mauve pink  gradual-red-->
+    <view class="cu-bar bg-gradual-red">
+      <view class="action margin-0 flex-sub  solid-left">我知道了</view>
+    </view>
+  </view>
+</view>
+
+
+
+</view>
